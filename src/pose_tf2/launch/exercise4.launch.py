@@ -20,14 +20,6 @@ def generate_launch_description() -> LaunchDescription:
         robot_description = urdf_file.read()
 
     launch_arguments = [
-        DeclareLaunchArgument(
-            'exercise_node',
-            default_value='exercise4_rpy',
-            description=(
-                'Executable to run: exercise4_rpy, '
-                'exercise4_rpy_spatialmath or exercise4_rpy_template'
-            ),
-        ),
         DeclareLaunchArgument('x', default_value='0.350'),
         DeclareLaunchArgument('y', default_value='-0.350'),
         DeclareLaunchArgument('z', default_value='0.170'),
@@ -46,7 +38,7 @@ def generate_launch_description() -> LaunchDescription:
 
     pose_broadcaster = Node(
         package='pose_tf2',
-        executable=LaunchConfiguration('exercise_node'),
+        executable='exercise4_rpy_spatialmath',
         name='exercise4_rpy_broadcaster',
         output='screen',
         parameters=[{

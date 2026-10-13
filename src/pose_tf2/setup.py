@@ -45,11 +45,7 @@ setup(
     entry_points={
         'console_scripts': [
             'exercise4_rpy = pose_tf2.exercise4_rpy:main',
-            (
-                'exercise4_rpy_spatialmath = '
-                'pose_tf2.exercise4_rpy_spatialmath:main'
-            ),
-            'exercise4_rpy_template = pose_tf2.exercise4_rpy_template:main',
+            'exercise4_rpy_spatialmath = pose_tf2.exercise4_rpy_spatialmath:main',
         ],
     },
 )

@@ -96,19 +96,6 @@ ros2 run tf2_tools view_frames
 ur5e_base -> target_b
 ```
 
-## Student version
-
-Run the student template with:
-
-```bash
-ros2 launch pose_tf2 exercise4.launch.py \
-  exercise_node:=exercise4_rpy_template
-```
-
-Complete the four `TODO` sections in
-`src/pose_tf2/pose_tf2/exercise4_rpy_template.py`. Initially, the correct
-translation is displayed but the object has the identity orientation.
-
 ## Experiment
 
 Repeat the exercise with a different orientation:

@@ -28,22 +28,10 @@ source install/setup.bash
 
 ## Run
 
-Run the standard solution:
+Run the SpatialMath solution:
 
 ```bash
 ros2 launch pose_tf2 exercise4.launch.py
-```
-
-Alternative implementations can be selected with `exercise_node`:
-
-```bash
-# Short solution using spatialmath.base
-ros2 launch pose_tf2 exercise4.launch.py \
-  exercise_node:=exercise4_rpy_spatialmath
-
-# Student template with TODO sections
-ros2 launch pose_tf2 exercise4.launch.py \
-  exercise_node:=exercise4_rpy_template
 ```
 
 The launch arguments `x`, `y`, `z`, `roll_deg`, `pitch_deg` and `yaw_deg`
